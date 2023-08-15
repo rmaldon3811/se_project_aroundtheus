@@ -186,3 +186,13 @@
     width: 252px;
   }
 }
+
+@media screen and (max-width: 620px) {
+  .footer {
+    max-width: fit-content;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+  }
+}
