@@ -1,9 +1,18 @@
 .header {
   padding-top: 45px;
-  border-bottom: 1px #545454 solid;
+  border-bottom: 1px rgb(84, 84, 84) solid;
   padding-bottom: 41px;
 }
 
 .header__logo {
-  padding-left: 27px;
+  height: 33px;
+  width: 173px;
+}
+
+@media screen and (max-width: 620px) {
+  .header__logo {
+    height: 24px;
+    width: 126px;
+    padding-left: 27px;
+  }
 }

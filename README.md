@@ -1,23 +1,9 @@
-# Project 3: Around The U.S.
+Project name: Around the U.S.
 
-### Overview
+This project is composed of several images from around the U.S. The visual concept is for any individual to be able to add their own images to the website from around the U.S.
 
-- Intro
-- Figma
-- Images
+This project uses figma for the design brief and specifications, while also utilizing grid layout, flexbox, and media queries for responsive design.
 
-**Intro**
+https://rmaldon3811.github.io/se_project_aroundtheus/
 
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
-
-**Figma**
-
-- [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
-
-**GitHub Link** https://rmaldon3811.github.io/se_project_aroundtheus/
-
-**Images**
-
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
-
-Good luck and have fun!
+![Alt text](image.png)

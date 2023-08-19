@@ -16,3 +16,10 @@
   flex-direction: column;
   min-height: 100vh;
 }
+
+@media screen and (max-width: 620px) {
+  .page__content {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
