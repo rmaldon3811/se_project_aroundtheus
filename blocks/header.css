@@ -1,6 +1,6 @@
 .header {
   padding-top: 45px;
-  border-bottom: 1px rgb(84, 84, 84) solid;
+  border-bottom: 1px rgba(109, 100, 100) solid;
   padding-bottom: 41px;
 }
 
@@ -14,5 +14,9 @@
     height: 24px;
     width: 126px;
     padding-left: 27px;
+  }
+
+  .header {
+    padding-bottom: 20.5px;
   }
 }

@@ -8,6 +8,7 @@
   width: 100%;
   position: relative;
   margin: 0 auto;
+  padding-bottom: 51px;
 }
 
 .page__content {
@@ -21,5 +22,8 @@
   .page__content {
     padding-left: 19px;
     padding-right: 19px;
+  }
+  .page__section {
+    padding-bottom: 19px;
   }
 }
