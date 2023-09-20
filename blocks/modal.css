@@ -14,6 +14,7 @@
 
 .modal__container {
   background-color: #fff;
+  position: relative;
   padding: 36px;
   margin: auto;
   border-radius: 10px;
