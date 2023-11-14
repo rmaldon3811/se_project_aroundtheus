@@ -68,7 +68,6 @@ function getCardElement(cardData) {
 
   cardTitleEl.textContent = cardData.name;
   cardImageEl.src = cardData.link;
-
   cardImageEl.alt = cardData.name;
 
   return cardElement;
@@ -97,6 +96,10 @@ profileEditForm.addEventListener("submit", (e) => {
   profileDescription.textContent = profileDescriptionInput.value;
   closePopup();
 });
+
+function renderCard(_container) {
+  _container.prepend(cardListEL);
+}
 
 initialCards.forEach((cardData) => {
   const cardElement = getCardElement(cardData);

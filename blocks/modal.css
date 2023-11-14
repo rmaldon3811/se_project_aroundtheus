@@ -100,9 +100,6 @@
   opacity: 0.5;
 }
 
-.modal__input_type_title {
-}
-
 @media screen and (max-width: 620px) {
   .modal__container {
     max-width: 282px;
