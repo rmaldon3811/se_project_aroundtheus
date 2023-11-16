@@ -123,3 +123,6 @@ profileEditForm.addEventListener("submit", (e) => {
 });
 
 initialCards.forEach((cardData) => renderCard(cardData, cardListEL));
+
+const DeleteButton = document.getElementById("card");
+remove();
