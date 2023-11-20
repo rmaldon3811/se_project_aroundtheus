@@ -4,6 +4,7 @@
   border-radius: 10px;
   list-style: none;
   font-family: "Inter", Arial, Helvetica, sans-serif;
+  position: relative;
 }
 
 .card__image {
