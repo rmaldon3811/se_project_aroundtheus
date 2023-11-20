@@ -91,7 +91,7 @@ function getCardElement(cardData) {
   });
 
   cardImageEl.addEventListener("click", () => {
-    cardElement.open(modalPreview);
+    cardElement.open(".card__image");
   });
   cardTitleEl.textContent = cardData.name;
   cardImageEl.src = cardData.link;
