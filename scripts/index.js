@@ -90,6 +90,9 @@ function getCardElement(cardData) {
     likebutton.classList.toggle("card__like-button_active");
   });
 
+  cardImageEl.addEventListener("click", () => {
+    cardElement.open(modalPreview);
+  });
   cardTitleEl.textContent = cardData.name;
   cardImageEl.src = cardData.link;
   cardImageEl.alt = cardData.name;
@@ -126,3 +129,5 @@ initialCards.forEach((cardData) => renderCard(cardData, cardListEL));
 
 const DeleteButton = document.getElementById("card");
 remove();
+
+const modalPreview = document.querySelector(".modal__preview");
