@@ -130,3 +130,17 @@
     height: 26px;
   }
 }
+.modal__preview {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, 0.6s, linear;
+}
