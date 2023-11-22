@@ -96,39 +96,36 @@ function getCardElement(cardData) {
   cardTitleEl.textContent = cardData.name;
   cardImageEl.src = cardData.link;
   cardImageEl.alt = cardData.name;
-
+  return cardElement;
   cardImageEl.addEventListener("click", () => {
     const imageElement = cardImageModal.querySelector(".modal__image");
     imageElement.src = cardData.link;
     openModal(cardImageModal);
-
-    return cardElement;
   });
-
-  profileEditButton.addEventListener("click", () => {
-    profileTitleInput.value = profileTitle.textContent;
-    profileDescriptionInput.value = profileDescription.textContent;
-    profileEditModal.classList.add("modal_opened");
-  });
-
-  addNewCardButton.addEventListener("click", () => openModal(addNewCardModal));
-  addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
-
-  addCardModalCloseButton.addEventListener("click", () =>
-    closeModal(addNewCardModal)
-  );
-
-  profileEditCloseButton.addEventListener("click", () => {
-    closePopup();
-  });
-
-  profileEditForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    profileTitle.textContent = profileTitleInput.value;
-    profileDescription.textContent = profileDescriptionInput.value;
-    closePopup();
-  });
-
-  initialCards.forEach((cardData) => renderCard(cardData, cardListEL));
 }
+profileEditButton.addEventListener("click", () => {
+  profileTitleInput.value = profileTitle.textContent;
+  profileDescriptionInput.value = profileDescription.textContent;
+  profileEditModal.classList.add("modal_opened");
+});
+
+addNewCardButton.addEventListener("click", () => openModal(addNewCardModal));
+addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
+
+addCardModalCloseButton.addEventListener("click", () =>
+  closeModal(addNewCardModal)
+);
+
+profileEditCloseButton.addEventListener("click", () => {
+  closePopup();
+});
+
+profileEditForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  profileTitle.textContent = profileTitleInput.value;
+  profileDescription.textContent = profileDescriptionInput.value;
+  closePopup();
+});
+
+initialCards.forEach((cardData) => renderCard(cardData, cardListEL));
