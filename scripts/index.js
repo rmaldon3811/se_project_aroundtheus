@@ -55,7 +55,8 @@ const cardTemplate =
   document.querySelector("#card-template").content.firstElementChild;
 
 const cardImageModal = document.querySelector("#modal-preview-image");
-const cardImageModalClose = document.querySelector("modal__close");
+console.log(cardImageModal);
+const cardImageModalClose = cardImageModal.querySelector(".modal__close");
 
 function closePopup() {
   profileEditModal.classList.remove("modal_opened");
@@ -101,7 +102,9 @@ function getCardElement(cardData) {
     const imageElement = cardImageModal.querySelector(".modal__image");
     imageElement.src = cardData.link;
     openModal(cardImageModal);
-    previewCloseBtn.addEventListener("click", () => closeModal(cardImageModal));
+    cardImageModalClose.addEventListener("click", () =>
+      closeModal(cardImageModal)
+    );
   });
   return cardElement;
 }

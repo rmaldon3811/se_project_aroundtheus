@@ -56,6 +56,10 @@
   background-size: contain;
 }
 
+.modal__pic-container {
+  position: relative;
+}
+
 .modal__close:hover {
   cursor: pointer;
   opacity: 0.5;
