@@ -52,6 +52,8 @@
 .card__delete-button {
   background: url(../images/Trash.svg);
   position: absolute;
+  top: auto;
+  right: auto;
   justify-content: end;
   width: 18px;
   height: 19.3px;

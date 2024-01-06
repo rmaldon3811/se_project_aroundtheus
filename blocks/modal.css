@@ -10,6 +10,7 @@
   display: none;
   justify-content: center;
   padding: 0 19px;
+  transition: visibility 0s, opacity 0.5s, linear;
 }
 
 .modal__container {
